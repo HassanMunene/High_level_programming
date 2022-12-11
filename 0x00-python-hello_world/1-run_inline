@@ -1,6 +1,2 @@
 #!/bin/bash
-
-echo "#!/usr/bin/python3" >  main.py
-echo $PYCODE >> main.py
-chmod u+x main.py
-./main.py
+echo $PYCODE | python3
