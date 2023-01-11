@@ -6,5 +6,5 @@ result = ""
 for i in range(97, 123):
     result = result + chr(i)
     
-print(str(result))
+print(str(result), end="")
 
