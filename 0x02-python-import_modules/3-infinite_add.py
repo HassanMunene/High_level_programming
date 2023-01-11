@@ -2,8 +2,8 @@
 
 if __name__ == "__main__":
     import sys
-    l = sys.argv
+    le = sys.argv
     sum = 0
-    for i in range(1, len(l)):
-        sum = sum + int(l[i])
+    for i in range(1, len(le)):
+        sum = sum + int(le[i])
     print("{}".format(sum))
