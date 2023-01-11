@@ -10,4 +10,4 @@ for i in range(0, 100, 1):
     if i == 89:
         print("{}{}".format(f, g))
         break
-    print("{}{}, ".format(f, g), end="") 
+    print("{}{}, ".format(f, g), end="")
