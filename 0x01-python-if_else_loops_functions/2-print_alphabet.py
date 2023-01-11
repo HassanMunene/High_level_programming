@@ -6,5 +6,5 @@ result = ""
 for i in range(97, 123):
     result = result + chr(i)
     
-print(str(result), end="")
+print("{}".format(str(result)), end="")
 
