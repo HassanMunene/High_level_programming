@@ -9,4 +9,4 @@ def print_matrix_integer(matrix=[[]]):
             if c == l2 - 1:
                 print("{:d}".format(matrix[r][c]))
             else:
-                print("{:d} ".format(matrix[r][c]), end="") 
+                print("{:d} ".format(matrix[r][c]), end="")
