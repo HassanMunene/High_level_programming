@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-module representation of a real 
+module representation of a real
 Rectangle class
 """
 
@@ -17,6 +17,7 @@ class Rectangle:
     @property
     def width(self):
         return self.__width
+
     @property
     def height(self):
         return self.__height
