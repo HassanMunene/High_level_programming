@@ -3,6 +3,8 @@
 in this module we are looking at
 declaring class called square
 """
+
+
 class Square:
     """
     Square class
