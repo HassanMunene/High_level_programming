@@ -3,5 +3,7 @@
 class Square:
     """
     This is a representation of a square class
+    Attributes:
+        
     """
     pass
