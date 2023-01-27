@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+"""
+In this module we are focusing on introducing
+another instance method that will be used to
+calculate the area of a square
+"""
+
+
 class Square:
     """
     Square class representation

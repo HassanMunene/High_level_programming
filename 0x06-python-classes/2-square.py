@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+This module shows one of the ways
+used to validate the attribute size
+"""
+
+
 class Square:
     """
     Square class representation
