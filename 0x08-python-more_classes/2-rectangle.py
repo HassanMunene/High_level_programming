@@ -1,31 +1,35 @@
 #!/usr/bin/python3
 """
-module representation of a rectangle class
+This is a module that creates a class
+which returns a perimeter and the area of
+rectangle
 """
 
 
 class Rectangle:
-    """ Rectangle class """
+    """
+    This is a blueprint of a rectangle
+    """
 
     def __init__(self, width=0, height=0):
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
-        return self.__width
+        return self.__widht
+    
+    @width.setter
+    def width(self, value):
+        if type(value) != int:
+            raise TypeError("Width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
 
     @property
     def height(self):
         return self.__height
-
-    @width.setter
-    def width(self, value):
-        if type(value) != int:
-            raise TypeError("width must be an integer")
-        if value < 0:
-            raise ValueError("width must be >= 0")
-        self.__width = value
 
     @height.setter
     def height(self, value):
@@ -36,13 +40,9 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """
-        area of the rectangle
-        """
-        return self.__width * self.__height
+        return (self.__width) * (self.__height)
 
     def perimeter(self):
-        """
-        perimeter of a rectangle
-        """
-        return self.__width * 2 + self.__height * 2
+        if self.__width == 0 and self.__height == 0:
+            return 0
+        return (self.__width * 2) + (self.__height * 2)
