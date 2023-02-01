@@ -10,8 +10,6 @@ class Rectangle:
     """
     class representatiion of a rectangle
     """
-
-
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -19,6 +17,7 @@ class Rectangle:
     @property
     def width(self):
         return self.__width
+
     @property
     def height(self):
         return self.__height
@@ -40,6 +39,7 @@ class Rectangle:
         self.__height = value
 
     def area(self):
+
         """
         used to calculate the area of the rectangle
         """
