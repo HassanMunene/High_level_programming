@@ -1,10 +1,18 @@
 #!/usr/bin/python3
 """
 Module representation of a rectangle class
+it returns the area of the rectangle and the perimeter too
+it also uses str and repr to print the string representation and
+the object representation
+it uses uses del to delete the instace
 """
 
 
 class Rectangle:
+    """
+    This is the blueprint of the rectangle
+    """
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -37,14 +45,20 @@ class Rectangle:
         """
         return area of the rectangle
         """
-        return self.__width * self.__height
+        return (self.__width) * (self.__height)
+
     def perimeter(self):
         """
         perimeter of a rectangle
         """
-        return self.__width * 2 + self.__height * 2
+        if self.__width == 0 and self.__height == 0:
+            return 0
+        return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
+        """
+        Return the string representation of the object
+        """
         s = ""
         for r in range(self.__height):
             for c in range(self.__width):
@@ -54,6 +68,14 @@ class Rectangle:
         return s
     
     def __repr__(self):
+        """
+        Return a representation of an object that
+        can be used to make another instance
+        """
         return("Rectangle(" + str(self.__width) + "," + str(self.__height) + ")")
+
     def __del__(self):
+        """
+        Used to delete the instance
+        """
         print("Bye rectangle...")

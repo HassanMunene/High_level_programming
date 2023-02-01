@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
 Module representation of Rectangle class
+and calculates the area and the perimeter of the
+rectangle
 """
 
 
@@ -38,11 +40,21 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        return self.__width * self.__height
+        """
+        used to calculate the area of the rectangle
+        """
+        return (self.__width) * (self.__height)
+
     def perimeter(self):
-        return self.__width * 2 + self.__height * 2
+        """
+        used to calculate the perimeter of the rectangle
+        """
+        return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
+        """
+        show string representation of an object
+        """
         s = ""
         for r in range(self.__height):
             for c in range(self.__width):
@@ -50,3 +62,11 @@ class Rectangle:
             if r != self.__height - 1:
                 s += "\n"
         return s
+
+    def __repr__(self):
+        """
+        represent a string that can be used to
+        create a new instance of the object
+        """
+        return("Rectangle(" + str(self.__width) + "," + str(self.__height) + ")")
+

@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-
 """
-This is a module for class representation
-of a rectanglr
+This is module about creating
+a class called Rectangle and just
+not passing any attributes
 """
 
 
 class Rectangle:
-    """ rectangle class """
+    """
+    A blueprint of a rectangle
+    """
     pass
