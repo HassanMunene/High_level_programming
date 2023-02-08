@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/home/hassanmunene/Desktop/alx-higher_level_programming/0x0B-python-input_output/./3-main.py", line 23, in <module>
+    s_my_set = to_json_string(my_set)
+  File "/home/hassanmunene/Desktop/alx-higher_level_programming/0x0B-python-input_output/3-to_json_string.py", line 10, in to_json_string
+    return json.dumps(my_obj)
+  File "/usr/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type set is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hassanmunene/Desktop/alx-higher_level_programming/0x0B-python-input_output/./3-main.py", line 27, in <module>
+    print("[{}] {}".format(e.__class__.name__, e))
+AttributeError: type object 'TypeError' has no attribute 'name__'
