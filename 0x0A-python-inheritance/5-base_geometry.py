@@ -3,6 +3,7 @@
 a module containing an empty class of geometry
 """
 
+
 class BaseGeometry:
     """
     BaseGeometry blueprint
