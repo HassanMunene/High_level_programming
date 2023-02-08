@@ -3,6 +3,7 @@
 The purpose of this module is to read a file
 """
 
+
 def read_file(filename=""):
     """
     This func reads a file and returns it's content
