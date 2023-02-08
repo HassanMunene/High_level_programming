@@ -5,6 +5,7 @@ a class that inherited directly or indirectly from a
 specified class
 """
 
+
 def inherits_from(obj, a_class):
     """
     a func to achieve the target of the module
