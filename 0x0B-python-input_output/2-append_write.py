@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 This module appends the a string to a file
-and if the file does not exist it creates 
+and if the file does not exist it creates
 another file
 """
 
