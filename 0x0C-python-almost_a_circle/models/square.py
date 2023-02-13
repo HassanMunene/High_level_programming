@@ -6,7 +6,7 @@ the class Rectangle
 from models.rectangle import Rectangle
 
 
-class Sqaure(Rectangle):
+class Square(Rectangle):
     """
     class square inheriting from rectangle
     """
