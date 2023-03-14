@@ -1,3 +1,3 @@
  git add .
- git commit -m "deleting a database from mysql server"
+ git commit -m "list all table in mysql"
  git push
