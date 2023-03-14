@@ -16,8 +16,21 @@ class Rectangle(Base):
 
         super().__init__(id)
 
+        if type(width) != int:
+            raise TypeError("width must be an integer")
+        if type(height) != int:
+            raise TypeError("height must be an integer")
+        if width <= 0:
+            raise ValueError("width must be > 0")
+        if height <= 0:
+            raise ValueError("height must be > 0")
+        if x < 0:
+            raise ValueError("x must be >= 0")
+        if y < 0:
+            raise ValueError("y must be >= 0")
+
         self.__width = width
-        self.__height = height
+        self.__height = width
         self.__x = x
         self.__y = y
 
@@ -27,7 +40,7 @@ class Rectangle(Base):
         get the value of the width
         """
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """
@@ -93,7 +106,6 @@ class Rectangle(Base):
             raise ValueError("x must be >= 0")
         self.__x = value
 
-
     def area(self):
         """
         calculate and return the area of the rectangle
@@ -116,8 +128,7 @@ class Rectangle(Base):
         """
         overiding str method from base
         """
-        return '[Rectangle] ({}) {}/{} - {}/{}' \
-                .format(self.id, self.x, self.y, self.width, self.height)
+        return '[Rectangle] ({}) {}/{} - {}/{}'.format(self.id, self.x, self.y, self.width, self.height)
 
     @staticmethod
     def generate_setter(name, value):
@@ -149,8 +160,5 @@ class Rectangle(Base):
         """
         return the dictionary representation of a rectangle
         """
-        return {'id': self.id, 'width': self.width, 'height': self.height, 'x': self.x, 'y': self.y}
-
-
-
-
+        return {'id': self.id, 'width': self.width, 'height': 
+                self.height, 'x': self.x, 'y': self.y}

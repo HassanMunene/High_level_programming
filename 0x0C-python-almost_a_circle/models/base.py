@@ -4,6 +4,7 @@ Base modules
 """
 import json
 
+
 class Base:
     """number of constructor"""
     __nb_objects = 0
@@ -23,7 +24,6 @@ class Base:
         self.id = id
 
     @staticmethod
-
     def to_json_string(list_dictionaries):
         """return json string representation"""
         if not list_dictionaries:
@@ -45,7 +45,6 @@ class Base:
                 jasonfile.write(Base.to_json_string(list_dicts))
 
     @staticmethod
-
     def from_json_string(json_string):
         """
         json string to dictionary
@@ -53,8 +52,8 @@ class Base:
         if json_string is None or json_string == "[]":
             return []
         return json.loads(json_string)
-    @classmethod
 
+    @classmethod
     def create(cls, **dictionary):
         """
         return a class initiated with attr already set
@@ -68,6 +67,7 @@ class Base:
             dummy = clas(1)
         dummy.update(**dictionary)
         return dummy
+
     @classmethod
     def load_from_file(cls):
         """
@@ -79,12 +79,10 @@ class Base:
         try:
             with open(filename) as f:
                 content = f.read()
-        except:
+        except  Exception as e:
             return new
 
         json_file = Base.from_json_string(content)
         for obj in json_file:
             new.append(cls.create(**obj))
         return new
-
-
