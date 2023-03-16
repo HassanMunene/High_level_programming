@@ -1,0 +1,3 @@
+-- import databse dump from hbtn_0d_tvshows
+-- write a script that lists all shows contained in hbtn_0d_tvshows
+-- each row should display
