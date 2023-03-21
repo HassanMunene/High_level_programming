@@ -46,3 +46,39 @@ from local_module import local_class
 ## Absolute imports in Python
 Absolute imports involve a fullpath. i.e from the projects root folder to the desired module
 
+let's assume we have the following directory structure:
+
+![dir-structure](https://github.com/HassanMunene/Django/blob/main/images/absolute-import-updated.jpg)
+
+Here is a directory named project
+under which there are to subdirectories: pkg1 and pkg2
+
+pkg1 has 2 modules in it: module1 and module2
+
+pkg2 has 3 modules: module3, module4 and __init__.py and 1 subpkg names subpkg1 which contians module5:
+
+let's assume module1 contains a function called fun1
+module3 contains a function called fun2
+
+module5 contains a function called fun3
+
+This is how we can import those functions using absolute path
+
+```
+from pkg1 import module2
+from pkg2 import module3 import fun2
+from pkg2.subpkg1.module5 import fun3
+```
+Absolute path will remain valid even if the current location of the import statement changes
+
+## Relative imports
+
+Relative imports specifies an object or module imported from it's current location
+they depend on the current location as well as the location of the modules or the object to be imported
+
+It uses dot(.) to specifiy the location. 
+A single dot specifies that the module is in the current directory
+
+Two dots specifies that the module is in it's parent directory of the current location
+
+Three dots(...) specifies that it is in the grandparent directory of the current location
