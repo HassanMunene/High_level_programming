@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 This module adds two integers that is a and b
 a and b must be integers or floats, otherwise raise TypeError exception
@@ -23,6 +24,9 @@ def add_integer(a, b=98):
         raise TypeError("a must be an integer")
     if type(b) is not int:
         raise TypeError("b must be an integer")
+
+    if type(a) is str:
+        raise TypeError("a must be an integer")
 
     return a + b
 
