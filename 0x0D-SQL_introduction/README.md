@@ -8,3 +8,5 @@ that will be able to communicate with the database, just like how we need a prog
 This language is called STRUCTURED QUERY LANGUAGE(SQL). 
 
 The type of database is used to manipulate is called a relational database, as it made up of tables that are somehow connected.
+
+
