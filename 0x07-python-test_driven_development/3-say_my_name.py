@@ -5,6 +5,7 @@ thought last name is optional
 """
 
 def say_my_name(first_name, last_name=""):
+
     """
     This is the function that does the dirty work of printing
     when it is called
@@ -16,4 +17,3 @@ def say_my_name(first_name, last_name=""):
         raise TypeError("last_name must be a string")
 
     print("My name is {} {}".format(first_name, last_name))
-
