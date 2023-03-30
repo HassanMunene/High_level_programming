@@ -1,0 +1,9 @@
+
+>>> say_name = __import__('3-say_my_name').say_my_name
+
+>>> say_name("Hassan", "Munene")
+My name is Hassan Munene
+
+# it is not a must to add the last name
+>>> say_name("king" )
+My name is king 
