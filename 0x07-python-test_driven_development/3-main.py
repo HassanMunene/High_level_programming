@@ -6,6 +6,7 @@ say_my_name("Hassan", "Munene")
 say_my_name("Munene", "Awanzi")
 say_my_name("Lawrence", "Omondi")
 say_my_name("Bob")
+say_my_name()
 
 try:
     say_my_name(12, "white")

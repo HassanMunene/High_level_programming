@@ -17,3 +17,8 @@ TypeError: first_name must be a string
 >>> say_name("king", 12)
 Traceback (most recent call last):
 TypeError: last_name must be a string
+
+# when you do not pass any argument
+>>> say_name( )
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
