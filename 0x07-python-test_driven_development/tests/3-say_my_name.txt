@@ -7,3 +7,13 @@ My name is Hassan Munene
 # it is not a must to add the last name
 >>> say_name("king" )
 My name is king 
+
+# ensure that there is not string that is added
+>>> say_name(12, "king")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+# even if you pass the last_name as a number it will still run
+>>> say_name("king", 12)
+Traceback (most recent call last):
+TypeError: last_name must be a string
