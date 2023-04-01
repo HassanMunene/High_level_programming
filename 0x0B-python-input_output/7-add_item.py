@@ -19,13 +19,12 @@ n = len(sys.argv)
 # so we need to create an empty list first, after assigning them arguments
 # then use that list to save it to a json file name add_item.json in json
 
-cli_list = []
 try:
     cli_list = load_from_json_file('add_item.json')
-except FileNotFoundError as e:
-    print(e)
-finally:
-    for i in range(1, n):
-        cli_list.append(sys.argv[i])
+except FileNotFoundError:
+    cli_list = []
+    
+for i in range(1, n):
+    cli_list.append(sys.argv[i])
 
-    save_to_json_file(cli_list, "add_item.json")
+save_to_json_file(cli_list, "add_item.json")
