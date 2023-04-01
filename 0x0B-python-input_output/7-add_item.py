@@ -15,9 +15,9 @@ import sys
 
 n = len(sys.argv)
 
-# using the for loop we iterate through the arguments and then append them to a list.
+# using for loop we iterate through the arguments and then append them to a list.
 # so we need to create an empty list first, after assigning them arguments
-# then next it to use that list to save it to a json file name add_item.json in a json representation
+# then use that list to save it to a json file name add_item.json in json
 
 cli_list = []
 
