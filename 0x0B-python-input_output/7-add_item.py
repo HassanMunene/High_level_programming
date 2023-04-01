@@ -22,8 +22,7 @@ n = len(sys.argv)
 try:
     cli_list = load_from_json_file('add_item.json')
 except FileNotFoundError:
-    cli_list = []
-    
+    cli_list = []    
 for i in range(1, n):
     cli_list.append(sys.argv[i])
 
