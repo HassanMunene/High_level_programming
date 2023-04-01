@@ -4,18 +4,18 @@ This script takes arguments from the command line and then
 adds them to a list and then the list is saved
 to a json file in a json representation
 """
+import sys
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
-import sys
 # sys is the module that will help us interact with the interpreter
 
 
 # the first thing to do is to get the number of commandline arguments passed.
-# remember that argv is just a simple list strucure that contains the cli arguments
+# argv is just a simple list strucure that contains the cli arguments
 
 n = len(sys.argv)
 
-# using for loop we iterate through the arguments and then append them to a list.
+# using for loop we iterate through arguments then append them to a list.
 # so we need to create an empty list first, after assigning them arguments
 # then use that list to save it to a json file name add_item.json in json
 
