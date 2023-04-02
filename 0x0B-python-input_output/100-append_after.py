@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This function reads the contents of the input file line by line, uisng the readline() function
+This function reads the contents of the input file line by line
+uisng the readline() function
 
 rememebr the readline() returns a list of of the lines in teh file
 
@@ -14,9 +15,11 @@ and for each line it reads, it writes the line to the output file.
 while writing we check if the line contains the specified search strin
 
 if it does we write a new string after it.
-remember we are using 'w' so it overwites what was there before and starts aftresh while looking fo the search string.
+remember we are using 'w' so it overwites what was there before 
+starts aftresh while looking fo the search string.
 
-we have what we are writing already in the list we have already returned in the lines with the help of the readline() method
+we have what we are writing already in the list we have already
+returned in the lines with the help of the readline() method
 """
 
 
@@ -35,4 +38,3 @@ def append_after(filename="", search_string="", new_string=""):
             f.write(line)
             if search_string in line:
                 f.write(new_string)
-
