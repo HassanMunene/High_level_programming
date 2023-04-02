@@ -1,4 +1,22 @@
 ## sys.argv
+It is a list that contains command-line arguents passed to the script
+
+The first element *sys.argv[0]* is the name of the script itself.
+
+in the context of a file path, *sys.argv[1]* could be used to pass the path of a file to a python script as a commandline argument.
+
+for example you could use this to read the contents of a file specifies at the commandline
+```
+import sys
+
+path = sys.argv[1]
+
+with open(path, 'r') as file:
+	contents = file.read()
+
+print(contents)
+```
+
 The sys module provides functions and variables used to manipulate different parts of the python runtime environment 
 This module provides access to some variables and functions that interact strongly with the interpreter
 
