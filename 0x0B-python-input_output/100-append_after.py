@@ -12,10 +12,10 @@ st that we have now of line that is lines
 
 and for each line it reads, it writes the line to the output file.
 
-while writing we check if the line contains the specified search strin
+while writing we check if the line contains the specified search str
 
 if it does we write a new string after it.
-remember we are using 'w' so it overwites what was there before 
+remember we are using 'w' so it overwites what was there before
 starts aftresh while looking fo the search string.
 
 we have what we are writing already in the list we have already
