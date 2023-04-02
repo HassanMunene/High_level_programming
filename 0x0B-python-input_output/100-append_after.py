@@ -1,11 +1,22 @@
 #!/usr/bin/python3
 """
-This function reads the contents of the input file line by line, uisng the readline() function. rememebr the readline() returns a list of of the lines in teh file
+This function reads the contents of the input file line by line, uisng the readline() function
+
+rememebr the readline() returns a list of of the lines in teh file
+
 so here the list of the lines is stored in the variable lines.
 
-we open the file again in write mode this time and iterate over the list that we have now of line that is lines
-and for each line it reads, it writes the line to the output file. while writing we check if the line contains the specified search string. if it does we write a new string after it.
-remember we are using 'w' so it overwites what was there before and starts aftresh while looking fo the search string. we have what we are writing already in the list we have already returned in the lines with the help of the readline() method
+we open the file again in write mode this time and iterate over the
+st that we have now of line that is lines
+
+and for each line it reads, it writes the line to the output file.
+
+while writing we check if the line contains the specified search strin
+
+if it does we write a new string after it.
+remember we are using 'w' so it overwites what was there before and starts aftresh while looking fo the search string.
+
+we have what we are writing already in the list we have already returned in the lines with the help of the readline() method
 """
 
 
