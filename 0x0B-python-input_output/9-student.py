@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+"""
+we declare a class and initialize some
+instance atrributes
+and then we crate a function that basically returns
+the dictionary representation of the class
+this is achieved by use of the __dict__ attribute of the object
+"""
+
 
 class Student:
     """
