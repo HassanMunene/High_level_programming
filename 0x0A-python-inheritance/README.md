@@ -31,4 +31,9 @@ however issubclass(float, int) is False since float is not a subclass of int
 class DerivedClassName(Base1, Base2, Base3):
 	....
 ```
+## Private Variables
+private instance variables cannot be accessed except from inside an objects does not exist in python , there is a convection in pythnon code.
+
+a name prefixed with an underscore *_spam* should be  treated as non-public part of the API(whether a function, a method or a data member.
+
 
