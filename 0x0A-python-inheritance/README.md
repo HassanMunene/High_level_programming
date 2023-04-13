@@ -25,4 +25,10 @@ issubclass(bool, int) is true since bool is a subclass of int,
 
 however issubclass(float, int) is False since float is not a subclass of int
 ```
+## Multiple Inheritance
+
+```
+class DerivedClassName(Base1, Base2, Base3):
+	....
+```
 
