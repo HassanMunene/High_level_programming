@@ -1,12 +1,17 @@
 #!/usr/bin/python3
 """
-This module represents a list ofa class
+This module shows a class MyList tha inherit from
+the well known list class
+so it will inherit all the public methods and attributes such as append
+It also inherits the sort methos
 """
 
 
 class MyList(list):
     """
     a blueprint of MyList a subclass of list
+    that inherits all the things of list
+    it also adds its own method print_sorted()
     """
     def print_sorted(self):
         """

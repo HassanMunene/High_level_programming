@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-Mylist  = __import__("1-my_list").Mylist
+Mylist  = __import__("1-my_list").MyList
 
 my_list = Mylist()
 my_list.append(1)
