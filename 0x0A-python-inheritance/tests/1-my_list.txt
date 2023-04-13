@@ -1,8 +1,14 @@
-"""
-We begin with the subclass of the built-in list class
-
-Import the class
+First we Import the class which is MyList to make it available to this file
 	>>> MyList = __import__('1-my_list').MyList
+Then we test of the empty list is indeed empty
 	>>> my_list = MyList()
 	>>> print(my_list)
 	[]
+Then let us test if truly the list appends
+	>>> my_list.append(1)
+	>>> my_list.append(4)
+	>>> my_list.append(2)
+	>>> my_list.append(3)
+	>>> my_list.append(5)
+	>>> print(my_list)
+	[1, 4, 2, 3, 5]
