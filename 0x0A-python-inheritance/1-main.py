@@ -2,6 +2,7 @@
 Mylist  = __import__("1-my_list").MyList
 
 my_list = Mylist()
+print(my_list)
 my_list.append(1)
 my_list.append(4)
 my_list.append(2)
