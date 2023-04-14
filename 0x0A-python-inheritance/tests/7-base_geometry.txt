@@ -5,4 +5,6 @@ How to use the 7-base_geometry file
 
 	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 	>>> bg = BaseGeometry()
+	>>> type(bg)
+	<class '7-base_geometry.BaseGeometry'>
 
