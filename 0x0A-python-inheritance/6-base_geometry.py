@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 """
-a module to define a class called
-BaseGeometry with attributes and methods
+a module containing an empty class of geometry
 """
 
 
 class BaseGeometry:
+    """
+    BaseGeometry blueprint
+    """
     def area(self):
         """
-        a class method
+        the area of an object is done here
         """
         raise Exception("area() is not implemented")
