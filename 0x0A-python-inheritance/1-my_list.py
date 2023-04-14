@@ -17,6 +17,6 @@ class MyList(list):
         """
         print the list in a sorted way, ascending order
         """
-        l = self[:]
-        l.sort()
-        print(l)
+        list_t = self[:]
+        list_t.sort()
+        print(list_t)
