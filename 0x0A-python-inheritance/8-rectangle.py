@@ -7,7 +7,6 @@ which is defined in a file in the same directory
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
-
 class Rectangle(BaseGeometry):
     """
     blueprint of a rectangle
