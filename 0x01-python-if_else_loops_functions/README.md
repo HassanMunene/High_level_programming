@@ -75,5 +75,32 @@ int **pp = &p;
 
 int y = **pp;
 ```
+python range() function is handy when you need to perform an action a specidfied number of times.
+
+PEP python enhancement proposal
+
+looping is a key computer science concept. if you want to become a good programmer mastering loop is among the first steps you need to take
+sometimes you want to execute a block of code however many times you want.
+
+range() generally allows you to generate an series of numbers within a given range.
+
+range(stop) takes one argument - will start at 0 and includes every whole number upto it but not including it.
+range(start, stop) takes two arguments
+range(start, stop, step) takes three arguments
+
+if you wrap range inside reverse()function then you can print the integers in reverse order
+```
+>>> for i in reversed(range(5)):
+...     print(i)
+... 
+4
+3
+2
+1
+0
+>>> 
+```
+
+
 
 
