@@ -17,3 +17,5 @@ defenestrate 12
 >>> 
 
 ```
+a code that modifies a collection while iterating over that same collection is tricky to get it right so it is usually advisable and more straight forward to loop over a copy of the same collection o create a new collection
+
