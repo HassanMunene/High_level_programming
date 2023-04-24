@@ -10,4 +10,3 @@ for i in range(100):
         numbers += ", "
 
 print(numbers)
-
