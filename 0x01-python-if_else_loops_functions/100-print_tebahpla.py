@@ -7,7 +7,4 @@ not allowed to import any module
 output: zYxWvUtSrQpOnMlKjIhGfEdCbA
 """
 for i in reversed(range(97, 123)):
-    print("{}".format(chr(i)) if i % 2 == 0 else "{}".format(chr(i - 32)), end="")
-
-#print(ord('A'))
-#print(ord('Z'))
+    print("{}".format(chr(i)) if i%2==0 else "{}".format(chr(i - 32)), end="")
