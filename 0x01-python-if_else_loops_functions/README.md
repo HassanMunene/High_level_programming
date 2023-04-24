@@ -55,6 +55,25 @@ loop statement may have an else clause, it is executed when the loop terminates 
 
 the pass statement does nothing it is only required when a statement is required syntatically but the program requires no action
 
+## Pointers in c
+dereferencing is the process of accessing the value stored at a particular memory location pointed to by a pointer varible.
 
+```
+int x = 10;
+int *p = &x;
+
+int y = *p;
+```
+the value y is assigned the value of x
+
+when dealing with double pointers, you need to deference twice to access the value it points to.
+
+```
+int x = 10;
+int *p = &x;
+int **pp = &p;
+
+int y = **pp;
+```
 
 

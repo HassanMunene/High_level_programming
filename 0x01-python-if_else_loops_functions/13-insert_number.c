@@ -1,47 +1,40 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include "lists.h"
 
-listint_t *insert_node(listint_t **head, int number)
+/**
+ * print_listint - print all the elements of a listint_t list
+ * @h: pointer to the head of the list
+ * return: the number of nodes
+ */
+
+size_t print_listint(const listint_t *h)
 {
-	listint_t *new = malloc(sizeof(listint_t));
-	listint_t *tracer = *head;
+	const listint_t *current;
+	unsigned int n;
 
-	if (!new || !head)
+	current = h;
+	n = 0;
+	while (current != NULL)
 	{
-		return (0);
+		printf("%i\n", current->n);
+		current = current->next;
+		n++;
 	}
-	new->n = number;
+	return (n);
+}
 
-	if (!tracer)
-	{
-		*head = new;
-		new->next = 0;
-		return (new);
-	}
+/**
+ * add_nodeint_end - adds a new node at the end of a listint_t list
+ * @head: pointer to pointer of first node of listint_t list
+ * @n: integer to be included in new node
+ * Return: address of the new element or Null if it fails
+ */
 
-	while (tracer)
-	{
-		if (tracer->next)
-		{
-			if (number < tracer->n)
-			{
-				new->next = tracer;
-				*head = new;
-				return (new);
-			}
-			if (number >= tracer->n && number < tracer->next->n)
-			{
-				new->next = tracer->next;
-				tracer->next = new;
-				return (new);
-			}
-		}
-		else
-		{
-			tracer->next = new;
-			new->next = 0;
-		}
-		tracer = tracer->next;
-	}
-	return (new);
+listint_t *add_nodeint_end(listint_t **head, const int n)
+{
+	listint_t *new;
+	listint_t *current;
+
+	current = *head;
 }
