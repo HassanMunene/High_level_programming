@@ -11,5 +11,5 @@ for i in range(0, 100):
     elif i > 10 and i < 99:
         print ("{}, ".format(i), end="")
     elif i == 99:
-        print("{}".format(i))
+        print(f"{99}")
 
