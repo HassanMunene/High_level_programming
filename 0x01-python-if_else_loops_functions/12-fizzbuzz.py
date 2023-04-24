@@ -6,6 +6,7 @@ if the number is a multiple of 5 print buzz instead
 if the number is the multiple of of 3 and 5 print fizzbuzz
 """
 
+
 def fizzbuzz():
     """
     the function that print
