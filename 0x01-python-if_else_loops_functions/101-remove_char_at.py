@@ -6,6 +6,7 @@ removes the character at the position specified by n
 return the modified string
 """
 
+
 def remove_char_at(str, n):
     """
     str: the string to be modified
