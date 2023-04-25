@@ -100,7 +100,32 @@ if you wrap range inside reverse()function then you can print the integers in re
 0
 >>> 
 ```
-
+## Python strings
+strings are immutable this means they cannot be modified. however we changea strign by generating a copy of it.
+```
+>>> s = "mybacon"
+>>> s[2] = 'f'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> 
+```
+here is how to copy a string
+```
+SyntaxError: unterminated string literal (detected at line 1)
+>>> s = 'mybacon'
+>>> s = s[:2] + 'f' + s[3:]
+>>> s
+'myfacon'
+>>> s = 'mybacon'
+>>> s = s.replace('b', 'f')
+>>> s
+'myfacon'
+>>> 
+```
+the upper() method returns the string in uppercase
+the lower() method does the opposite
+the strip() method removes whitespace 
 
 
 
