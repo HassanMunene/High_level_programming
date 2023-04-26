@@ -37,3 +37,11 @@ ADD CONSTRAINT <constraint name> PRIMARY KEY (<attribute list>)
 the conraint name you can use the following convention (customer_pk)
 so you can remember easily. the attribute list contains the one or more attributes that form this pk
 
+The foreign key is a bit more complicated since you have to specify both the fk attribute in this child table and the pk attributes that they link to in the parent table
+
+```
+ALTER TABLE <table name>
+ADD CONSTRAINTS <constaints name> FOREIGN KEY (<attribute list>)
+REFERENCES <parent table name> (<attribute list>);
+```
+
