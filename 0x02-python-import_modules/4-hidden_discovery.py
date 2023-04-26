@@ -6,14 +6,13 @@ it should print one name per line
 it should print only names that do not start with __
 """
 if __name__ == "__main__":
-    import hidden_4
-    import types
     import importlib.util
 
-    module = types.ModuleType("hidden_4")
-    code = hidden_4.__code__
-    exec(code, module.__dict__)
+    spec = importlib.util.spec_from_file_location("hidden_4", "./hidden_4.pyc")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
 
     for name in sorted(dir(module)):
         if not name.startswith("__"):
             print(name)
+
