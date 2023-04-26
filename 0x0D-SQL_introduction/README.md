@@ -9,4 +9,22 @@ This language is called STRUCTURED QUERY LANGUAGE(SQL).
 
 The type of database is used to manipulate is called a relational database, as it made up of tables that are somehow connected.
 
+## Installing MySQL
+MySQL is an open-source dbms commonly installed as part of the popular LAMP(Linux, Apache, MySQL, PHP/Python/Pearl) stack. 
 
+SQL statements are divided into two major categories:
+1. data defination language
+1. data manipulation language
+
+## data defination language(DDL)
+used to build and modify the structure of your tables and other objects in the database.
+- create table
+```
+CREATE TABLE <table name>(
+<attribute name><data type>,
+...
+<attribute name> <datatype>);
+```
+the data types that are used mostly are,
+- character strings eg. VARCHAR, CHAR
+- numeric types e.g. NUMBER, INTEG
