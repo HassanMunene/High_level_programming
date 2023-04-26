@@ -55,3 +55,4 @@ VALUES (<value1>, ..., <valuen>);
 the comma delimeter list of values must match the table structure 
 the update statement is used to change the values that are already in table
 
+
