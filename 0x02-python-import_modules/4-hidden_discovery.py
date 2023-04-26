@@ -15,4 +15,3 @@ if __name__ == "__main__":
     for name in sorted(dir(module)):
         if not name.startswith("__"):
             print(name)
-
