@@ -45,3 +45,13 @@ ADD CONSTRAINTS <constaints name> FOREIGN KEY (<attribute list>)
 REFERENCES <parent table name> (<attribute list>);
 ```
 
+## Data manipulation language(DML)
+these statements are used to work with the data in the tables. 
+1. the insert statement is used to add new rows to a table
+```
+INSERT INTO <table name>
+VALUES (<value1>, ..., <valuen>);
+```
+the comma delimeter list of values must match the table structure 
+the update statement is used to change the values that are already in table
+
