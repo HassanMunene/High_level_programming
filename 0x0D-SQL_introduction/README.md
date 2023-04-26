@@ -28,3 +28,12 @@ CREATE TABLE <table name>(
 the data types that are used mostly are,
 - character strings eg. VARCHAR, CHAR
 - numeric types e.g. NUMBER, INTEG
+
+The alter table statement may be used to specify primary and foreign key constraints, as well as to make other modifictions to the table structure
+```
+ALTER TABLE <table name>
+ADD CONSTRAINT <constraint name> PRIMARY KEY (<attribute list>)
+```
+the conraint name you can use the following convention (customer_pk)
+so you can remember easily. the attribute list contains the one or more attributes that form this pk
+
