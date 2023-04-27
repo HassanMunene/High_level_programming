@@ -99,3 +99,4 @@ the result set will contain those rows where there is a match between customer_i
 
 ![join-customer-order-table](https://github.com/HassanMunene/alx-higher_level_programming/blob/main/0x0E-SQL_more_queries/join-in-sql.png)
 
+
