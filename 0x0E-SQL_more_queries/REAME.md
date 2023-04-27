@@ -80,3 +80,19 @@ mysql> SELECT * FROM Students;
 +------+------+--------------+
 ```
 
+## JOIN
+Sometimes we want to see data from two or more tables. to do this we need to join the tables in a way that matches up right information from each other
+
+### NATURAL JOIN
+specifies that all attributes whose values will be matched between the two tables are those with matching names.
+joins two tables based on a common column, and selects records that have matching values in these columns
+
+```
+SELECT Customers.customer_id, Customers.first_name, Orders.amount
+FROM Customers
+JOIN Orders
+ON Customers.customer_id = Orders.customer;
+```
+here the sql command selects customer_id and first_name columns from the customers table and the amount column from the orders table
+
+the result set will contain those rows where there is a match between customer_id of the customers table and customer of the order table
