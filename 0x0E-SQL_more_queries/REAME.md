@@ -95,4 +95,7 @@ ON Customers.customer_id = Orders.customer;
 ```
 here the sql command selects customer_id and first_name columns from the customers table and the amount column from the orders table
 
-the result set will contain those rows where there is a match between customer_id of the customers table and customer of the order table
+the result set will contain those rows where there is a match between customer_id of the customers table and customer of the order table As shown below
+
+!(https://github.com/HassanMunene/alx-higher_level_programming/blob/main/0x0E-SQL_more_queries/join-in-sql.png)[join-customer-order-table]
+
