@@ -3,7 +3,7 @@
 
 /**
  * is_palindrome - check whether is palidrome or not
- * @head: head node
+ * @head: pointer to the pointer if the head
  * Return: 1 if palindrome or 0 otherwise
  */
 
