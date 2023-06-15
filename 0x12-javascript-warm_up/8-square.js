@@ -9,7 +9,7 @@ if (isNaN(Number(argv[2]))) {
   for (i; i <= x; i++) {
     let j = 1;
     while (j <= x) {
-      process.stdout.write('x');
+      process.stdout.write('X');
       j++;
     }
     console.log();
