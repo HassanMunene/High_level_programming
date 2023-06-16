@@ -23,3 +23,6 @@ query_results = cur.fetchall()
 for row in query_results:
     print(row)
 db.close()
+
+if __name__ == "main":
+    main()
