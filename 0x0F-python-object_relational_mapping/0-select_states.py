@@ -14,7 +14,7 @@ username = sys.argv[1]
 password = sys.argv[2]
 database = sys.argv[3]
 
-db = MySQLdb.connect(host="localhost", user=username, password=password, db=database)
+db = MySQLdb.connect(host="localhost", user=username, password=password, db=database, port=3306)
 
 cur = db.cursor()
 
