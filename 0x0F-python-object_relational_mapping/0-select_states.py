@@ -10,19 +10,17 @@ finally we will close the connection
 import sys
 import MySQLdb
 
-username = sys.argv[1]
-password = sys.argv[2]
-database = sys.argv[3]
+if __name__ == "__main__":
+    username = sys.argv[1]
+    password = sys.argv[2]
+    database = sys.argv[3]
 
-db = MySQLdb.connect(host="localhost", user=username, password=password, db=database, port=3306)
+    db = MySQLdb.connect(host="localhost", user=username, password=password, db=database, port=3306)
 
-cur = db.cursor()
+    cur = db.cursor()
 
-cur.execute("SELECT * FROM states ORDER BY id ASC")
-query_results = cur.fetchall()
-for row in query_results:
-    print(row)
-db.close()
-
-if __name__ == "main":
-    main()
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    query_results = cur.fetchall()
+    for row in query_results:
+        print(row)
+    db.close()
