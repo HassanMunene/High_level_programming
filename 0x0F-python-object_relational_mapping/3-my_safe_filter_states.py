@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
-This script filters the states in the
-hbtn_0e_0_usa database by matching their
-name with the name provided in the argv[4]
+This script is implemented so at to avoid
+sql injections
 """
 import sys
 import MySQLdb
@@ -22,9 +21,8 @@ if __name__ == "__main__":
     )
 
     cur = db.cursor()
-    query =  "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC"\
-        .format(state_name)
-    cur.execute(query)
+    query =  "SELECT * FROM states WHERE name = %(state_name)s ORDER BY id ASC"
+    cur.execute(query, {'state_name':state_name})
 
     result_query = cur.fetchall()
     for row in result_query:
