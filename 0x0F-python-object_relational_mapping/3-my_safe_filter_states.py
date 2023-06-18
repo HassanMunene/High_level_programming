@@ -21,8 +21,8 @@ if __name__ == "__main__":
     )
 
     cur = db.cursor()
-    query =  "SELECT * FROM states WHERE name = %(state_name)s ORDER BY id ASC"
-    cur.execute(query, {'state_name':state_name})
+    query = "SELECT * FROM states WHERE name = %(state_name)s ORDER BY id ASC"
+    cur.execute(query, {'state_name': state_name})
 
     result_query = cur.fetchall()
     for row in result_query:
