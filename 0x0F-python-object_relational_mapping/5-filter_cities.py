@@ -10,7 +10,7 @@ if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
-    state_name=sys.argv[4]
+    state_name = sys.argv[4]
 
     db = MySQLdb.connect(
         host="localhost",
@@ -21,11 +21,12 @@ if __name__ == "__main__":
     )
 
     cur = db.cursor()
-    query = "SELECT cities.name FROM cities JOIN states on cities.state_id=states.id WHERE states.name = %(state_name)s"
+    query = "SELECT cities.name FROM cities JOIN states\
+        ON cities.state_id=states.id WHERE states.name = %(state_name)s"
     cur.execute(query, {"state_name": state_name})
 
     result_query = cur.fetchall()
-    city_names=[]
+    city_names = []
     for row in result_query:
         city_names.append(row[0])
     result_string = ", ".join(city_names)
