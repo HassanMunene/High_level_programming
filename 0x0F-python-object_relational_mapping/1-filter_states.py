@@ -13,10 +13,16 @@ if __name__ == "__main__":
     password = sys.argv[2]
     database = sys.argv[3]
 
-    db = MySQLdb.connect(host="localhost", user=username, password=password, database=database, port=3306)
+    db = MySQLdb.connect(
+        host="localhost",
+        user=username,
+        password=password,
+        database=database,
+        port=3306
+    )
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+    cur.execute("SELECT * FROM states WHERE name REGEXP '^N' ORDER BY id ASC")
 
     query_results = cur.fetchall()
     for row in query_results:
