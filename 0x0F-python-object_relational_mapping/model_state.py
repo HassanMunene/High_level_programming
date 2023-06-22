@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """
 using sqlalchemy to create a table
 using class and then connecting to the mysql
