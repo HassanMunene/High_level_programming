@@ -17,6 +17,7 @@ db = sys.argv[3]
 
 engine = create_engine(f'mysql+mysqldb://{user}:{pwd}@localhost:3306/{db}')
 
+ Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
 session = Session()
 
