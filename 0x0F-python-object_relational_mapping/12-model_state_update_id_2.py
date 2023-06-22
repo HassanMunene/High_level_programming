@@ -4,6 +4,8 @@ This module will be used to update the table
 states where the id is 2 from its current name
 to New Mexico
 """
+
+
 import sys
 import sqlalchemy
 from sqlalchemy import create_engine
