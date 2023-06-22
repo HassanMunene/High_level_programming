@@ -11,19 +11,20 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 
-user = sys.argv[1]
-pwd = sys.argv[2]
-db = sys.argv[3]
-sysname = sys.argv[4]
+if __name__ == "__main__":
+    user = sys.argv[1]
+    pwd = sys.argv[2]
+    db = sys.argv[3]
+    sysname = sys.argv[4]
 
-engine = create_engine(f'mysql+mysqldb://{user}:{pwd}@localhost:3306/{db}')
+    engine = create_engine(f'mysql+mysqldb://{user}:{pwd}@localhost:3306/{db}')
 
-Session = sessionmaker(bind=engine)
-session = Session()
+    Session = sessionmaker(bind=engine)
+    session = Session()
 
-result = session.query(State).filter(State.name == sysname).first()
+    result = session.query(State).filter(State.name == sysname).first()
 
-if result:
-    print(result.id)
-else:
-    print("Not found")
+    if result:
+        print(result.id)
+    else:
+        print("Not found")

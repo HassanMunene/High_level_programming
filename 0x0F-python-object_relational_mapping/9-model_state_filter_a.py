@@ -15,13 +15,13 @@ if __name__ == "__main__":
     pwd = sys.argv[2]
     db = sys.argv[3]
 
-engine = create_engine(f'mysql+mysqldb://{user}:{pwd}@localhost:3306/{db}')
+    engine = create_engine(f'mysql+mysqldb://{user}:{pwd}@localhost:3306/{db}')
 
-Session = sessionmaker(bind=engine)
-session = Session()
+    Session = sessionmaker(bind=engine)
+    session = Session()
 
-results = session.query(State)\
-    .filter(State.name.like('%a%')).order_by(State.id)
+    results = session.query(State)\
+        .filter(State.name.like('%a%')).order_by(State.id)
 
-for query in results:
-    print('{}: {}'.format(query.id, query.name))
+    for query in results:
+        print('{}: {}'.format(query.id, query.name))
