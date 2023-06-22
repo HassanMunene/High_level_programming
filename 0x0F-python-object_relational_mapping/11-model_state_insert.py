@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-This module will add a new object to the State table
-in essence we will add a new row called 'Lousiana'
+this module inserts a new State called Lousiana
+to the table states in db hbtn_0e_6_usa
 """
 import sys
 import sqlalchemy
@@ -23,7 +23,5 @@ if __name__ == "__main__":
     session.add(state1)
     session.commit()
 
-    result = session.query(State).filter_by(name='Lousiana').first()
-
-    print(str(result.id))
-    session.close()
+    query = session.query(State).filter_by(name='Lousiana').first()
+    print(query.id)
