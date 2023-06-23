@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-
+"""
+This module queries the cities table
+and then prints the city name and the state name it belongs to\
+to print the state we will have to use the state attribute of the cities table
+"""
 import sys
 import sqlalchemy
 from sqlalchemy import create_engine
