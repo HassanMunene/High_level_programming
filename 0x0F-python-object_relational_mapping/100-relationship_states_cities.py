@@ -10,20 +10,21 @@ from relationship_city import City
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-user = sys.argv[1]
-pwd = sys.argv[2]
-db = sys.argv[3]
+if __name__ == "__main__":
+    user = sys.argv[1]
+    pwd = sys.argv[2]
+    db = sys.argv[3]
 
-engine = create_engine(f'mysql+mysqldb://{user}:{pwd}@localhost:3306/{db}')
+    engine = create_engine(f'mysql+mysqldb://{user}:{pwd}@localhost:3306/{db}')
 
-Base.metadata.create_all(engine)
+    Base.metadata.create_all(engine)
 
-Session = sessionmaker(bind=engine)
-session = Session()
+    Session = sessionmaker(bind=engine)
+    session = Session()
 
-new_state = State(name='California')
-new_state.cities = [City(name='San Francisco')]
+    new_state = State(name='California')
+    new_state.cities = [City(name='San Francisco')]
 
-session.add(new_state)
-session.commit()
-session.close()
+    session.add(new_state)
+    session.commit()
+    session.close()
