@@ -2,7 +2,7 @@
 """
 This module represents the cities table
 """
-from model_state import Base
+from relationship_state import Base
 import sqlalchemy
 from sqlalchemy import Column, String, ForeignKey, Integer
 
