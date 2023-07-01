@@ -10,19 +10,19 @@ import requests
 
 
 if __name__ == "__main__":
-    url = 'http://0.0.0.0:5000/search_user'
+
     if len(sys.argv) > 1:
         letter = sys.argv[1]
     else:
         letter = ""
     payload = {'q': letter}
-    response = requests.post(url, data=payload)
+    response = requests.post('http://0.0.0.0:5000/search_user', data=payload)
 
     try:
         json_resp = response.json()
         if json_resp == {}:
             print("No result")
         else:
-            print("[{}] {}".format(json_resp['id'], json_resp['name'])
+            print("[{}] {}".format(json_resp.get('id'), json_resp.get('name')))
     except ValueError:
         print("Not a valid JSON")
