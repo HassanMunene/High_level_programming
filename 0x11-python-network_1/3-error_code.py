@@ -2,7 +2,7 @@
 """
 This sript takes in a URL,sends a request to the URL
 displays  the body of the response
-It also has to manage urllib.error.HTTPError exceptions and print the error code
+It also has to manage urllib.error.HTTPError exceptions and print the errorcode
 """
 import sys
 import urllib.error
